@@ -1,0 +1,25 @@
+# Mycodes
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+char a[50],b[50];
+int i,j=0,k,len;
+scanf("%s",&a);
+len = strlen(a);
+for(i=0;i<len;i++){
+    if(i%2==0){
+        printf("%c",a[i]);
+    }
+    else{
+        b[j]= a[i];
+        j++;
+    }
+}
+printf("\n");
+for(k=0;k<j;k++){
+    printf("%c",b[k]);
+}
+
+}
